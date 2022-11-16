@@ -1,0 +1,1471 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "orchardProviderAWS-test",
+        "directory": "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws",
+        "workspaceDir": "/Users/damian.xu/Projects/Github/orchard",
+        "sources": [
+            "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws/src/test/scala",
+            "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws/src/test/scala-2.13",
+            "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws/src/test/scala-2",
+            "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws/src/test/java",
+            "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws/target/scala-2.13/src_managed/test"
+        ],
+        "dependencies": [
+            "orchardCore",
+            "orchardProviderAWS"
+        ],
+        "classpath": [
+            "/Users/damian.xu/Projects/Github/orchard/.bloop/orchardProviderAWS/scala-2.13/classes",
+            "/Users/damian.xu/Projects/Github/orchard/.bloop/orchardCore/scala-2.13/classes",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.11/scalatest_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/ec2/2.17.238/ec2-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/emr/2.17.238/emr-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/ssm/2.17.238/ssm-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/sts/2.17.238/sts-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/slick/slick_2.13/3.3.3/slick_2.13-3.3.3.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/slick/slick-hikaricp_2.13/3.3.3/slick-hikaricp_2.13-3.3.3.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.13/2.9.2/play-json_2.13-2.9.2.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.19/akka-actor-typed_2.13-2.6.19.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.11/scalatest-core_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.11/scalatest-featurespec_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.11/scalatest-flatspec_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.11/scalatest-freespec_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.11/scalatest-funsuite_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.11/scalatest-funspec_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.11/scalatest-propspec_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.11/scalatest-refspec_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.11/scalatest-wordspec_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.11/scalatest-diagrams_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.11/scalatest-matchers-core_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.11/scalatest-shouldmatchers_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.11/scalatest-mustmatchers_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-query-protocol/2.17.238/aws-query-protocol-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/protocol-core/2.17.238/protocol-core-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/sdk-core/2.17.238/sdk-core-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/auth/2.17.238/auth-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/http-client-spi/2.17.238/http-client-spi-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/regions/2.17.238/regions-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/annotations/2.17.238/annotations-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/utils/2.17.238/utils-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-core/2.17.238/aws-core-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/metrics-spi/2.17.238/metrics-spi-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/apache-client/2.17.238/apache-client-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/netty-nio-client/2.17.238/netty-nio-client-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-json-protocol/2.17.238/aws-json-protocol-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/profiles/2.17.238/profiles-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.0.0/scala-collection-compat_2.13-2.0.0.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.13/2.9.2/play-functional_2.13-2.9.2.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.5/jackson-datatype-jsr310-2.10.5.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.19/akka-actor_2.13-2.6.19.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.19/akka-slf4j_2.13-2.6.19.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.11/scalatest-compatible-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.11/scalactic_2.13-3.2.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.0.1/scala-xml_2.13-2.0.1.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/json-utils/2.17.238/json-utils-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.77.Final/netty-codec-http-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http2/4.1.77.Final/netty-codec-http2-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/third-party-jackson-core/2.17.238/third-party-jackson-core-2.17.238.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commons-codec-1.11.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar",
+            "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar"
+        ],
+        "out": "/Users/damian.xu/Projects/Github/orchard/.bloop/orchardProviderAWS",
+        "classesDir": "/Users/damian.xu/Projects/Github/orchard/.bloop/orchardProviderAWS/scala-2.13/test-classes",
+        "resources": [
+            "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws/src/test/resources",
+            "/Users/damian.xu/Projects/Github/orchard/orchard-provider-aws/target/scala-2.13/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.8",
+            "options": [
+                "-deprecation",
+                "-feature",
+                "-Xlint"
+            ],
+            "jars": [
+                "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+                "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.8/scala-compiler-2.13.8.jar",
+                "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar",
+                "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.21.0/jline-3.21.0.jar",
+                "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.9.0/jna-5.9.0.jar"
+            ],
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Users/damian.xu/.sdkman/candidates/java/11.0.14-zulu/zulu-11.jdk/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/damian.xu/Projects/Github/orchard"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "ec2",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ec2",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/ec2/2.17.238/ec2-2.17.238.jar"
+                        },
+                        {
+                            "name": "ec2",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/ec2/2.17.238/ec2-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "emr",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "emr",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/emr/2.17.238/emr-2.17.238.jar"
+                        },
+                        {
+                            "name": "emr",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/emr/2.17.238/emr-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "ssm",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ssm",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/ssm/2.17.238/ssm-2.17.238.jar"
+                        },
+                        {
+                            "name": "ssm",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/ssm/2.17.238/ssm-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "sts",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sts",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/sts/2.17.238/sts-2.17.238.jar"
+                        },
+                        {
+                            "name": "sts",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/sts/2.17.238/sts-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.slick",
+                    "name": "slick_2.13",
+                    "version": "3.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slick_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/slick/slick_2.13/3.3.3/slick_2.13-3.3.3.jar"
+                        },
+                        {
+                            "name": "slick_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/slick/slick_2.13/3.3.3/slick_2.13-3.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.slick",
+                    "name": "slick-hikaricp_2.13",
+                    "version": "3.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slick-hikaricp_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/slick/slick-hikaricp_2.13/3.3.3/slick-hikaricp_2.13-3.3.3.jar"
+                        },
+                        {
+                            "name": "slick-hikaricp_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/slick/slick-hikaricp_2.13/3.3.3/slick-hikaricp_2.13-3.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.postgresql",
+                    "name": "postgresql",
+                    "version": "42.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "postgresql",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3.jar"
+                        },
+                        {
+                            "name": "postgresql",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.3.3/postgresql-42.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-json_2.13",
+                    "version": "2.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-json_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.13/2.9.2/play-json_2.13-2.9.2.jar"
+                        },
+                        {
+                            "name": "play-json_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-json_2.13/2.9.2/play-json_2.13-2.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor-typed_2.13",
+                    "version": "2.6.19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.19/akka-actor-typed_2.13-2.6.19.jar"
+                        },
+                        {
+                            "name": "akka-actor-typed_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor-typed_2.13/2.6.19/akka-actor-typed_2.13-2.6.19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "aws-query-protocol",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aws-query-protocol",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-query-protocol/2.17.238/aws-query-protocol-2.17.238.jar"
+                        },
+                        {
+                            "name": "aws-query-protocol",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-query-protocol/2.17.238/aws-query-protocol-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "protocol-core",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "protocol-core",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/protocol-core/2.17.238/protocol-core-2.17.238.jar"
+                        },
+                        {
+                            "name": "protocol-core",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/protocol-core/2.17.238/protocol-core-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "sdk-core",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sdk-core",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/sdk-core/2.17.238/sdk-core-2.17.238.jar"
+                        },
+                        {
+                            "name": "sdk-core",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/sdk-core/2.17.238/sdk-core-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "auth",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "auth",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/auth/2.17.238/auth-2.17.238.jar"
+                        },
+                        {
+                            "name": "auth",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/auth/2.17.238/auth-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "http-client-spi",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http-client-spi",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/http-client-spi/2.17.238/http-client-spi-2.17.238.jar"
+                        },
+                        {
+                            "name": "http-client-spi",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/http-client-spi/2.17.238/http-client-spi-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "regions",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "regions",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/regions/2.17.238/regions-2.17.238.jar"
+                        },
+                        {
+                            "name": "regions",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/regions/2.17.238/regions-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "annotations",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "annotations",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/annotations/2.17.238/annotations-2.17.238.jar"
+                        },
+                        {
+                            "name": "annotations",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/annotations/2.17.238/annotations-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "utils",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "utils",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/utils/2.17.238/utils-2.17.238.jar"
+                        },
+                        {
+                            "name": "utils",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/utils/2.17.238/utils-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "aws-core",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aws-core",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-core/2.17.238/aws-core-2.17.238.jar"
+                        },
+                        {
+                            "name": "aws-core",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-core/2.17.238/aws-core-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "metrics-spi",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "metrics-spi",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/metrics-spi/2.17.238/metrics-spi-2.17.238.jar"
+                        },
+                        {
+                            "name": "metrics-spi",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/metrics-spi/2.17.238/metrics-spi-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "apache-client",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "apache-client",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/apache-client/2.17.238/apache-client-2.17.238.jar"
+                        },
+                        {
+                            "name": "apache-client",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/apache-client/2.17.238/apache-client-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "netty-nio-client",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-nio-client",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/netty-nio-client/2.17.238/netty-nio-client-2.17.238.jar"
+                        },
+                        {
+                            "name": "netty-nio-client",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/netty-nio-client/2.17.238/netty-nio-client-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "aws-json-protocol",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aws-json-protocol",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-json-protocol/2.17.238/aws-json-protocol-2.17.238.jar"
+                        },
+                        {
+                            "name": "aws-json-protocol",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/aws-json-protocol/2.17.238/aws-json-protocol-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "profiles",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "profiles",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/profiles/2.17.238/profiles-2.17.238.jar"
+                        },
+                        {
+                            "name": "profiles",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/profiles/2.17.238/profiles-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.slf4j",
+                    "name": "slf4j-api",
+                    "version": "1.7.36",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "slf4j-api",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar"
+                        },
+                        {
+                            "name": "slf4j-api",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.reactivestreams",
+                    "name": "reactive-streams",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "reactive-streams",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.13",
+                    "version": "2.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.0.0/scala-collection-compat_2.13-2.0.0.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.0.0/scala-collection-compat_2.13-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.zaxxer",
+                    "name": "HikariCP",
+                    "version": "3.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "HikariCP",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0.jar"
+                        },
+                        {
+                            "name": "HikariCP",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/3.2.0/HikariCP-3.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-qual",
+                    "version": "3.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-qual",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar"
+                        },
+                        {
+                            "name": "checker-qual",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-functional_2.13",
+                    "version": "2.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-functional_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.13/2.9.2/play-functional_2.13-2.9.2.jar"
+                        },
+                        {
+                            "name": "play-functional_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/play/play-functional_2.13/2.9.2/play-functional_2.13-2.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.8/scala-reflect-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.10.5/jackson-core-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.10.5/jackson-annotations-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.5/jackson-datatype-jdk8-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.5/jackson-datatype-jsr310-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.5/jackson-datatype-jsr310-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.10.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.10.5.1/jackson-databind-2.10.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-actor_2.13",
+                    "version": "2.6.19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-actor_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.19/akka-actor_2.13-2.6.19.jar"
+                        },
+                        {
+                            "name": "akka-actor_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.13/2.6.19/akka-actor_2.13-2.6.19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.akka",
+                    "name": "akka-slf4j_2.13",
+                    "version": "2.6.19",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.19/akka-slf4j_2.13-2.6.19.jar"
+                        },
+                        {
+                            "name": "akka-slf4j_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/akka/akka-slf4j_2.13/2.6.19/akka-slf4j_2.13-2.6.19-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "json-utils",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "json-utils",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/json-utils/2.17.238/json-utils-2.17.238.jar"
+                        },
+                        {
+                            "name": "json-utils",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/json-utils/2.17.238/json-utils-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.eventstream",
+                    "name": "eventstream",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "eventstream",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar"
+                        },
+                        {
+                            "name": "eventstream",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.httpcomponents",
+                    "name": "httpclient",
+                    "version": "4.5.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "httpclient",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar"
+                        },
+                        {
+                            "name": "httpclient",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.httpcomponents",
+                    "name": "httpcore",
+                    "version": "4.4.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "httpcore",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar"
+                        },
+                        {
+                            "name": "httpcore",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.77.Final/netty-codec-http-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http/4.1.77.Final/netty-codec-http-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http2",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http2",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http2/4.1.77.Final/netty-codec-http2-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http2",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec-http2/4.1.77.Final/netty-codec-http2-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-classes-epoll",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-classes-epoll/4.1.77.Final/netty-transport-classes-epoll-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "third-party-jackson-core",
+                    "version": "2.17.238",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "third-party-jackson-core",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/third-party-jackson-core/2.17.238/third-party-jackson-core-2.17.238.jar"
+                        },
+                        {
+                            "name": "third-party-jackson-core",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/software/amazon/awssdk/third-party-jackson-core/2.17.238/third-party-jackson-core-2.17.238-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-java8-compat_2.13",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0.jar"
+                        },
+                        {
+                            "name": "scala-java8-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-java8-compat_2.13/1.0.0/scala-java8-compat_2.13-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-logging",
+                    "name": "commons-logging",
+                    "version": "1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-logging",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"
+                        },
+                        {
+                            "name": "commons-logging",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-codec",
+                    "name": "commons-codec",
+                    "version": "1.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-codec",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commons-codec-1.11.jar"
+                        },
+                        {
+                            "name": "commons-codec",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/commons-codec/commons-codec/1.11/commons-codec-1.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.1.77.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/io/netty/netty-transport-native-unix-common/4.1.77.Final/netty-transport-native-unix-common-4.1.77.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.8",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.11/scalatest_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.11/scalatest_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.11/scalatest-core_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-core_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.11/scalatest-core_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.11/scalatest-featurespec_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.11/scalatest-featurespec_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.11/scalatest-flatspec_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.11/scalatest-flatspec_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.11/scalatest-freespec_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.11/scalatest-freespec_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.11/scalatest-funsuite_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.11/scalatest-funsuite_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.11/scalatest-funspec_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.11/scalatest-funspec_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.11/scalatest-propspec_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.11/scalatest-propspec_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.11/scalatest-refspec_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.11/scalatest-refspec_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.11/scalatest-wordspec_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.11/scalatest-wordspec_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.11/scalatest-diagrams_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.11/scalatest-diagrams_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.11/scalatest-matchers-core_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.11/scalatest-matchers-core_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.11/scalatest-shouldmatchers_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.11/scalatest-shouldmatchers_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.11/scalatest-mustmatchers_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.11/scalatest-mustmatchers_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.11/scalatest-compatible-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.11/scalatest-compatible-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.13",
+                    "version": "3.2.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.11/scalactic_2.13-3.2.11.jar"
+                        },
+                        {
+                            "name": "scalactic_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.11/scalactic_2.13-3.2.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "2.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.0.1/scala-xml_2.13-2.0.1.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "path": "/Users/damian.xu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.0.1/scala-xml_2.13-2.0.1-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
