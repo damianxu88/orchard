@@ -54,7 +54,7 @@ object ActivityAttempt {
     activitySpec: JsValue,
     resourceId: String,
     checkProgressDelay: FiniteDuration
-  ): Behavior[Msg] = new OrchardBehavior[Msg](
+  ): Behavior[Msg] = OrchardBehavior[Msg](
     Behaviors.setup { ctx: ActorContext[Msg] =>
       Behaviors.withTimers { timers: TimerScheduler[Msg] =>
         ctx.log.info(s"Starting ActivityAttempt ${ctx.self}...")

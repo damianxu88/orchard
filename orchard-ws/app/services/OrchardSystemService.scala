@@ -29,8 +29,9 @@ class OrchardSystemService @Inject() (
 
   private val supervisedOrchardSystem: Behavior[OrchardSystem.Msg] = {
     new OrchardBehavior[OrchardSystem.Msg](
-      OrchardSystem.apply(databaseService.orchardDB, orchardSettings)
-    ).supervise(orchardSettings)
+      OrchardSystem.apply(databaseService.orchardDB, orchardSettings),
+      orchardSettings
+    ).supervise()
   }
 
   val orchard: ActorRef[OrchardSystem.Msg] =
