@@ -54,7 +54,7 @@ object ActivityAttempt {
     activitySpec: JsValue,
     resourceId: String,
     checkProgressDelay: FiniteDuration
-  ): Behavior[Msg] = OrchardBehavior.supervise[Msg] {
+  ): Behavior[Msg] = new OrchardBehavior[Msg](
     Behaviors.setup { ctx: ActorContext[Msg] =>
       Behaviors.withTimers { timers: TimerScheduler[Msg] =>
         ctx.log.info(s"Starting ActivityAttempt ${ctx.self}...")
@@ -141,7 +141,7 @@ object ActivityAttempt {
         }
       }
     }
-  }
+  ).supervise()
 
   def waiting(
     ps: Params,
