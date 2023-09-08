@@ -7,11 +7,17 @@
 
 package com.salesforce.mce.orchard
 
-import scala.jdk.DurationConverters._
+import akka.actor.typed.SupervisorStrategy
 
-import com.typesafe.config.{Config, ConfigFactory}
+import scala.concurrent.duration._
+import scala.jdk.DurationConverters._
+import scala.util.control.Exception.catching
+
+import com.typesafe.config.{Config, ConfigException, ConfigFactory}
 
 class OrchardSettings private (config: Config) {
+
+  def opt[T](f: => T): Option[T] = catching(classOf[ConfigException.Missing]).opt(f)
 
   def slickDatabaseConf = config.getConfig("jdbc")
 
@@ -21,9 +27,23 @@ class OrchardSettings private (config: Config) {
 
   val resourceReattemptDelay = config.getDuration("resource.reAttemptDelay").toScala
 
+  val restartBackoffParams = for {
+    min <- opt(config.getInt("restart.min-backoff-seconds"))
+    max <- opt(config.getInt("restart.max-backoff-seconds"))
+    jitter <- opt(config.getDouble("restart.jitter-probability"))
+  } yield {
+    OrchardSettings.RestartBackoffParams(min, max, jitter)
+  }
+
 }
 
 object OrchardSettings {
+
+  case class RestartBackoffParams(minBackoff: Int, maxBackoff: Int, jitterProbability: Double) {
+    val supervisorStrategy = SupervisorStrategy.restartWithBackoff(
+      minBackoff.seconds, maxBackoff.seconds, jitterProbability
+    )
+  }
 
   val configPath = "com.salesforce.mce.orchard"
 
