@@ -31,9 +31,7 @@ class OrchardSettings private (config: Config) {
     min <- opt(config.getInt("restart.minBackoffSeconds"))
     max <- opt(config.getInt("restart.maxBackoffSeconds"))
     jitter <- opt(config.getDouble("restart.jitterProbability"))
-  } yield {
-    OrchardSettings.RestartBackoffParams(min, max, jitter)
-  }
+  } yield OrchardSettings.RestartBackoffParams(min, max, jitter)
 
 }
 
