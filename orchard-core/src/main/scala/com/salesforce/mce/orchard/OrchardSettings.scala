@@ -28,9 +28,9 @@ class OrchardSettings private (config: Config) {
   val resourceReattemptDelay = config.getDuration("resource.reAttemptDelay").toScala
 
   val restartBackoffParams = for {
-    min <- opt(config.getInt("restart.min-backoff-seconds"))
-    max <- opt(config.getInt("restart.max-backoff-seconds"))
-    jitter <- opt(config.getDouble("restart.jitter-probability"))
+    min <- opt(config.getInt("restart.minBackoffSeconds"))
+    max <- opt(config.getInt("restart.maxBackoffSeconds"))
+    jitter <- opt(config.getDouble("restart.jitterProbability"))
   } yield {
     OrchardSettings.RestartBackoffParams(min, max, jitter)
   }
